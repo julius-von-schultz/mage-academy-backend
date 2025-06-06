@@ -1,0 +1,28 @@
+{
+    "collectionName": "components_task_mark_the_lines",
+    "info": {
+        "displayName": "MarkTheLines",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "question": {
+            "type": "text",
+            "required": true,
+            "maxLength": 512
+        },
+        "exampleCodePerLine": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::array-string-entry.array-string-entry"
+        },
+        "solutionLines": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::array-int-entry.array-int-entry"
+        },
+        "points": {
+            "type": "integer"
+        }
+    }
+}

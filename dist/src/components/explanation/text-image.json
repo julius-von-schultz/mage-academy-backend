@@ -1,0 +1,36 @@
+{
+    "collectionName": "components_explanation_text_images",
+    "info": {
+        "displayName": "TextImage",
+        "icon": "picture",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "maxLength": 128,
+            "required": true
+        },
+        "text": {
+            "type": "text",
+            "required": true
+        },
+        "orientation": {
+            "type": "string",
+            "required": false,
+            "default": "leading"
+        },
+        "img": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": true,
+            "required": true
+        }
+    }
+}

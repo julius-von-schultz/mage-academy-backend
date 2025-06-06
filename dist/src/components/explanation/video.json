@@ -1,0 +1,35 @@
+{
+    "collectionName": "components_explanation_videos",
+    "info": {
+        "displayName": "Video",
+        "icon": "television",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "video": {
+            "type": "media",
+            "multiple": true,
+            "required": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "transcript": {
+            "type": "text",
+            "required": false
+        },
+        "text": {
+            "type": "text",
+            "required": false,
+            "maxLength": 512
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "kind": "collectionType",
+    "collectionName": "tests",
+    "info": {
+        "singularName": "test",
+        "pluralName": "tests",
+        "displayName": "Test",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "contents": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::content.content"
+        },
+        "title": {
+            "type": "string",
+            "required": true,
+            "maxLength": 128
+        },
+        "description": {
+            "type": "text",
+            "maxLength": 512
+        }
+    }
+}

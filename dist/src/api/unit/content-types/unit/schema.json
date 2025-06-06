@@ -1,0 +1,43 @@
+{
+    "kind": "collectionType",
+    "collectionName": "units",
+    "info": {
+        "singularName": "unit",
+        "pluralName": "units",
+        "displayName": "Unit",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "maxLength": 128
+        },
+        "description": {
+            "type": "text",
+            "required": true,
+            "maxLength": 512
+        },
+        "estimatedTimeInMins": {
+            "type": "integer",
+            "min": 0
+        },
+        "sections": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::section.section"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": true
+        }
+    }
+}
