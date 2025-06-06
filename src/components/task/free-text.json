@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_task_free_texts",
+  "info": {
+    "displayName": "FreeText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true,
+      "maxLength": 512
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    },
+    "points": {
+      "type": "integer",
+      "required": false
+    }
+  }
+}

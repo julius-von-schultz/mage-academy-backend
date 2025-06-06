@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_explanation_audio",
+  "info": {
+    "displayName": "Audio",
+    "icon": "headphone"
+  },
+  "options": {},
+  "attributes": {
+    "audio": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "maxLength": 512
+    }
+  }
+}

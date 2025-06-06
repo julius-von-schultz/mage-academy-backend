@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "task.multiple-choice",
+        "task.free-text",
+        "explanation.video",
+        "explanation.text",
+        "explanation.text-image",
+        "explanation.code",
+        "task.single-choice",
+        "task.mark-the-lines",
+        "task.fill-the-gap",
+        "task.code",
+        "explanation.audio",
+        "utils.group-row"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "private": true
+    }
+  }
+}

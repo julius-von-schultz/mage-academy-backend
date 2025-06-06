@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sections",
+  "info": {
+    "singularName": "section",
+    "pluralName": "sections",
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 128
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 512
+    },
+    "estimatedTimeInMins": {
+      "type": "integer",
+      "min": 0
+    },
+    "lectures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lecture.lecture"
+    }
+  }
+}

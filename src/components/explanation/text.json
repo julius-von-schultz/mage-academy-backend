@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_explanation_texts",
+  "info": {
+    "displayName": "Text",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 128,
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

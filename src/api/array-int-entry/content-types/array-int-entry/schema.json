@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "array_int_entries",
+  "info": {
+    "singularName": "array-int-entry",
+    "pluralName": "array-int-entries",
+    "displayName": "ArrayIntEntry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "intEntry": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "private": true
+    }
+  }
+}

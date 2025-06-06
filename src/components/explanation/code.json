@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_explanation_codes",
+  "info": {
+    "displayName": "Code",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 128,
+      "required": true
+    },
+    "explanation": {
+      "type": "text",
+      "required": false,
+      "maxLength": 512
+    },
+    "code": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

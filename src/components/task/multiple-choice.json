@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_task_multiple_choices",
+  "info": {
+    "displayName": "MultipleChoice",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true,
+      "maxLength": 512
+    },
+    "points": {
+      "type": "integer",
+      "required": false
+    },
+    "possibleAnswers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::array-string-entry.array-string-entry"
+    },
+    "correctAnswers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::array-string-entry.array-string-entry"
+    },
+    "title": {
+      "type": "string",
+      "private": true
+    }
+  }
+}

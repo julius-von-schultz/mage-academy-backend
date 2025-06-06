@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_utils_group_rows",
+  "info": {
+    "displayName": "GroupRow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 128
+    },
+    "description": {
+      "type": "text"
+    },
+    "columnEntries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    }
+  }
+}

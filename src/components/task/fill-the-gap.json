@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_task_fill_the_gaps",
+  "info": {
+    "displayName": "FillTheGap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true,
+      "maxLength": 512
+    },
+    "textSnippets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::array-string-entry.array-string-entry"
+    },
+    "gapTexts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::array-string-entry.array-string-entry"
+    },
+    "points": {
+      "type": "integer",
+      "required": false
+    },
+    "solutionText": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
